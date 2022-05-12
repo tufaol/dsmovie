@@ -1,26 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
-*{
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+:root {
+  --bg-gray: #ddd;
+  --color-primary: #4d41c0;
+  --hewhite: #fff;
 }
 
-html, body{
-    background-color: #ddd;
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
-header{
-    background-color: #4D41C0;
-    color: #fff;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: -0.5rem;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+html,
+body {
+  background-color: var(--bg-gray);
 }
 
-header a {
-    text-decoration: none;
-    color: unset;
+header {
+  background-color: var(--color-primary);
+  color: var(--hewhite);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contato-container {
+  display: flex;
+  align-items: center;
+}
+
+.contato-container img {
+  margin-right: 10px;
 }
